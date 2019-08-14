@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	 <link href="LineIcons-Package/LineIcons.css" rel="stylesheet" type="text/css">
+	  
+	  <link rel="stylesheet" href="iconmonstr-iconic-font-1.3.0/css/iconmonstr-iconic-font.min.css">
+	  
+	  <link href="style.css" rel="stylesheet" type="text/css">
+	<style>
+	  	<style>
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {background-color: #f3b007;
+		
+		color: #fff !important;
+		}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+
+</style>
+	 
+  </head>
+  <body>
+	  <header class="fixed-top bg-transparent menu-tansparent" >
+<!--
+	    <nav class="navbar fixed-top navbar-expand-lg navbar-default bg-dark"> <a class="navbar-brand" href="#">Navbar</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	        <ul class="navbar-nav ml-auto" id="navbar_ul">
+	          <li class="nav-item dropdown active "> <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+					
+				</li>
+	          <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+	          <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
+            </ul>
+	        <form class="form-inline my-2 my-lg-0">
+	          
+	          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+-->
+      </header>
+  <section class="body">
+	  
+	    <div class="container">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-transparent"> <a class="navbar-brand mx-auto" href="#">
+			<img class="img-fluid" src="http://themes.framework-y.com/lightwire/wp-content/uploads/2018/10/logo-white.svg" width="183" height="37" alt="">
+			</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	      <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+	        <ul class="navbar-nav mr-auto pl-4" id="linkz">
+	            <li class="nav-item dropdown"> <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+	          <li class="nav-item dropdown"> <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+	           <li class="nav-item dropdown"> <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Project </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+				  <li class="nav-item dropdown"> <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Blog </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+				  <li class="nav-item dropdown"> <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Element </a>
+	            <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+	              <div class="dropdown-divider"></div>
+	              <a class="dropdown-item" href="#">Something else here</a> </div>
+              </li>
+            </ul>
+			  
+			  <ul class="ml-auto navbar-nav">
+				  
+				   <form class="form-inline mr-4 my-2 my-lg-0">
+	         
+	          <a class="nav-link" href=""><i class="lni-search size-md pr-4" id="search"></i></a>
+					   
+				     <button class="btn btn-orange btn-sm text-uppercase">Get in touch</button>
+            </form>
+			  
+			  </ul>
+	       
+          </div>
+        </nav>
+	  </div>
+<!--	div after the navbar -->
+	  <main>
+	  <div class="container">
+		  <div><hr style="height: 70px; margin: 0; border: none;"></div>
+	    <div class="row mt-5">
+		  	<div class="col-lg-6">
+			  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: transparent;">
+			    
+			    <div class="carousel-inner" role="listbox">
+			      <div class="carousel-item active"> 
+			        <div class="carousel">
+			          <h5 class="mx-auto">WORLDWIDE LEADER OF CONSTRUCTION INDUSTRY
+						</h5>
+			          
+		            </div>
+		          </div>
+			      <div class="carousel-item"> 
+			        <div class="carousel">
+			          <h5>
+THE BEST CONSTRUCTIONS COMPANY SINCE 1895</h5>
+			         
+		            </div>
+		          </div>
+			      <div class="carousel-item"> 
+			        <div class="carousel">
+			          <h5>OUR MISSION IS TO DEVELOP THE STRONGEST BUILDINGS</h5>
+			          
+		            </div>
+		          </div>
+		        </div>
+			  <!--  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>--> </div>
+            </div>
+			  
+		  <div class="col-lg-6 text-center">
+			  <div class="mt-5">
+			    <a class="play" href="">
+				  <span id="watch_later">watch later</span>
+			  <i class="fa fa-play "></i>
+			  </a>
+		    </div>
+			  </div>
+	    </div>
+		  <br>
+		  
+	    <div class="row">
+		  <div class="col-lg-6">
+		  	<p class="text-light" style="float: left;">
+			  Each of us is carving a stone, erecting a column, or cutting a piece of stained glass in the construction of something much bigger than ourselves.
+			  </p>
+		  </div>
+	    </div>
+	    </div>
+	  </main>
+	   
+		<!--	end of div after the navbar -->  
+  </section>
+	  <section style="background-color: rgb(246, 246, 246);">
+		  <div class="container">
+<!--			  beginning of card-->
+		  	<div class=" ">
+			  <div class="row">
+				<div class="col-lg-4 mb-2 mt--120">
+				  <div class="card card_effect">
+					  <div class="cardimg-effect">
+					  	<div class="overlay"></div>
+					  <figure>
+						  
+					  	<img class="card-img-top img-fluid" src="image-17.jpg" alt="Card image cap">
+					  </figure>
+					  	</div>
+					   <div class="card-body">
+					    <h5 class="card-title text-center">EXPERIENCED TEAM</h5>
+					    <p class="card-text text-center text-justify">Our team of experts in the areas of architecture, engineering, management and construction bring you the insight and advice you need for your project.</p>
+					    </div>
+				  </div>
+                </div>
+				  
+				<div class="col-lg-4 mb-2 mt--120">
+				  <div class="card card_effect"> 
+					  <div class="cardimg-effect">
+					  	<div class="overlay"></div>
+					  <figure>
+					  	<img class="card-img-top img-fluid" src="image-18.jpg" alt="Card image cap">
+					  </figure>
+					  	</div>
+					   
+					  <div class="card-body">
+					    <h5 class="card-title text-center">MODERN EQUIPMENT</h5>
+					    <p class="card-text text-center text-justify">Heavy equipment refers to heavy-duty vehicles, specially designed for executing construction tasks, most frequently ones involving earthwork operations.</p>
+					    </div>
+				  </div>
+                </div>
+				<div class="col-lg-4 mb-2 mt--120">
+				  <div class="card card_effect">
+					  <div class="cardimg-effect">
+					  	<div class="overlay"></div>
+					  <figure>
+					  	<img class="card-img-top img-fluid" src="image-29.jpg" alt="Card image cap">
+					  </figure>
+					  	</div>
+					  <div class="card-body">
+					    <h5 class="card-title text-center">SMART METHODS</h5>
+					    <p class="card-text text-center text-justify">The procedures and techniques that are used during the building process. We always focused on using modern methods of construction and repair.</p>
+					    </div>
+				  </div>
+                </div>
+		  </div>
+			  </div>
+			  
+<!--			 end of card -->
+		    <div class="row mt-5">
+			  <div class="col-lg-3 icon-box mb-3">
+				<div class="icon-box-cell"><span><img src="images/drill (3).png" alt="" class="img-fluid"></span></div>
+				  <div class="icon-box-cell pl-3">
+				  	<p>
+					  Manufacturing
+					  </p>
+					  <p>speed, flexibility</p>
+				  </div>
+				</div>
+				 <div class="col-lg-3 icon-box mb-3">
+				<div class="icon-box-cell"><span><img src="images/crane (1).png" alt="" class="img-fluid icon-box-cell-image"></span></div>
+				  <div class="icon-box-cell pl-3">
+				  	<p>
+					  Construction
+					  </p>
+					  <p>Heavy performance</p>
+				  </div></div>
+				 <div class="col-lg-3 icon-box mb-3">
+				<div class="icon-box-cell"><span><img src="images/drawing.png" alt="" class="img-fluid icon-box-cell-image_third"></span></div>
+				  <div class="icon-box-cell pl-3">
+				  	<p>
+					  Engineering
+					  </p>
+					  <p>Complex customer works</p>
+				  </div></div>
+				 <div class="col-lg-3 icon-box mb-3"><div class="icon-box-cell"><span><img src="images/solar-panel.png" alt="" class="img-fluid"></span></div>
+				  <div class="icon-box-cell pl-3">
+				  	<p>
+					  Energy
+					  </p>
+					  <p>Sun, oil and gas</p>
+				  </div></div>
+		    </div>
+		  </div>
+	  
+		  
+		  
+	  
+	  </section>
+	  <section>
+	  <div class="container">
+		  <div class="row mt-5">
+		    <div class="col-lg-6 mx-auto mt-5">
+			  	<h3 class="text-uppercase mb-4">SUSTAINABILITY GOALS</h3>
+				<p class="mx-auto mb-4">
+					Our team of experts in the areas of architecture, engineering, management and construction bring you the insight and advice you need for your project.
+				</p>
+				<ul id="list_labels">
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Ecologic materials and oils
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Human charity for fourth world countries
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Renovable products from the scratch
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							State of art metal roofing
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Great experts from all the world
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Home and skyscraper constructions
+						</label>
+					</li>
+				</ul>
+			  </div>
+		    <div class="col-lg-3 mt-5">
+			  <div class="card d-flex"> <img class="card-img-top img-fluid" src="image-27.jpg" alt="Card image cap">
+			   
+		      </div>
+			  <div class="card mt-4"> <img class="card-img-top img-fluid" src="image-30.jpg" alt="Card image cap">
+			   
+		      </div>
+            </div>
+		    <div class="col-lg-3 col-md-6 mt-5">
+				 <div class="project">
+  			<div class="img card ">
+					 	<img alt="" src="image-20.jpg" class="card-img-top img-fluid">
+					 </div>
+					 
+  				</div>
+			  
+			  </div>
+	    </div>
+      </div>
+	  </section>
+  <section style="background-color: rgb(246, 246, 246);">
+	  	<div class="container">
+		  <div class="row mt-5">
+		    <div class="col-md-6 mt-5 mb-5 ">
+				<a>
+					<img src="image-5.jpg" alt="" class="img-fluid">
+				
+                </a>
+				<div class="card quality_section text-left pl-3">
+				  
+				  <div class="card-body quality_section_body">
+				   
+				    <p class="card-text text-uppercase">Top Quality <a href="#" class="btn btn-warning text-light btn-sm ml-15">GUARANTEED</a></p>
+					  <div>
+					  <small class="text-uppercase">For all our products</small>
+						  
+						  <span class="pt-5">As an investment, quality building materials work in conjunction with other aspects of a building. Quality materials are the top.</span>
+					  </div>
+				    </div>
+				    </div>
+				
+			  
+			  </div>
+		    <div class="col-md-6 mt-5 mb-5">
+			  <div class="offset-lg-1">
+					  	<h3 class="text-uppercase mb-4">GUARANTEED QUALITY</h3>
+				<p class="mx-auto mb-4">
+					Our team of experts in the areas of architecture, engineering, management and construction bring you the insight and advice you need for your project.
+				</p>
+				<ul id="list_labels">
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Monthly checks
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Technological assisted operations
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Renovable products from the scratch
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Human char rlch countries
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Security for employees
+						</label>
+					</li>
+					<li>
+						<i class="lni-plus" id="lineicon"></i>
+						<label>
+							Only the best materials
+						</label>
+					</li>
+				</ul>
+				</div>
+			  </div>
+	      </div>
+        </div>
+  </section>
+	  <section id="third_section">
+		  <div class="container pt-1">
+		  	<div class="row">
+		    <div class="col-lg-6 mt-5 cubic_header">
+					<h3 class="text-warning">LET BUILD TOGETHER</h3><br>
+				<p class="text-light cubic_paragraph">
+					Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p><br>
+				
+				<div class="row">
+					<div class="col-md-6 cube_inner_paragraph">
+					<span>
+						<img alt="" src="images/cube.svg" class="img-fluid" width="50" height="50">
+						<p class="mt-2 text-left text-light" style="font-weight: bold; font-size: 25px;">850034</p>
+						<p class="mt-2 text-left text-uppercase text-light">square meter built</p>
+					</span>
+				</div>
+					<div class="col-md-6 cube_inner_paragraph">
+					<span>
+						<img alt="" src="images/labor.svg" class="img-fluid" width="50" height="50">
+						<p class="mt-2 text-left text-light" style="font-weight: bold; font-size: 25px;">850034</p>
+						<p class="mt-2 text-left text-uppercase text-light">square meter built</p>
+					</span>
+				</div>
+				</div>
+				</div>
+			  <div class="col-lg-6 mt-5">
+					<div class="offset-lg-3" id="pp">
+						<a class="check">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-warning text-light text-uppercase" style="font-weight: bold;"> <span><i class="lni-user pr-2"></i></span>Join our team</button>
+						  
+						  
+					    </div>
+						
+                        </a>
+					</div>
+				
+				</div>
+	    </div>
+		  </div>
+	    
+      </section>
+	  
+	  <section class="sixth_section">
+	  	<div class="container">
+		  <div class="row">
+			  <div class="col-lg-12">
+				  <hr>
+				  
+				  <h3 class="text-center text-dark text-uppercase sixth_section_first_header">
+				  	international scale
+				  </h3><br>
+				  
+				  <p class="text-center sixth_section_first_para">We believe in making it easier for organisations to work and grow on an international scale</p>
+			  
+			  </div>
+			
+			</div>
+		<hr style="height: 30px;">
+			<div class="row">
+				<div class="col-md-4 mb-2">
+				 <a href="" style="color: black;"> <div class="card"> 
+					  <div class="card-body">
+					    <div class="card-text card-box mt-2 mb-2">
+						<span class="mt-4 ">
+							<figure>
+								<img src="images/leadership.svg" alt="" width="60" height="60">
+							</figure>
+							</span>
+							
+							<div class="  card-caption">
+								
+								<h3>
+									Leadership
+								</h3>
+								<span><p>
+								Purus expedita fusce temporibus est odit mi quoeliquid sempere</p></span>
+								
+								
+							</div>
+						  
+						  </div>
+					   
+				  </div>
+					</div>
+					</a>
+					</div>
+				
+				<div class="col-md-4 mb-2">
+					 <a href="" style="color: black;"> <div class="card"> 
+					  <div class="card-body">
+					     <div class="card-text card-box mt-2 mb-2">
+						<span class="mt-4 ">
+							<figure>
+								<img src="images/medal.svg" alt="" width="60" height="60">
+							</figure>
+							</span>
+							
+							<div class="  card-caption">
+								
+								<h3>
+									Vision
+								</h3>
+								<span><p>
+								Purus expedita fusce temporibus est odit mi quoeliquid sempere</p></span>
+								
+								
+							</div>
+						  
+						  </div>
+					   
+				  </div>
+					</div>
+					</a>
+				</div>
+				
+				<div class="col-md-4 mb-2">
+				 <a href="" style="color: black;"> 
+					 <div class="card"> 
+					  <div class="card-body">
+					    <div class="card-text card-box mt-2 mb-2">
+						<span class="mt-4">
+							<figure>
+								<img src="images/thunderbolt.svg" alt="" width="60" height="60">
+							</figure>
+							</span>
+							
+							<div class="  card-caption">
+								
+								<h3>
+									Core Values
+								</h3>
+								<span><p>
+								Purus expedita fusce temporibus est odit mi quoeliquid sempere</p></span>
+								
+								
+							</div>
+						  
+						  </div>
+					   
+				  </div>
+					</div>
+					</a>
+				</div>
+			
+		  </div>
+			
+			<hr style="height: 40px;">
+			
+		  </div>
+	  </section>
+	  
+	  <section>
+	  <div class="container">
+		  <hr>
+		  <div class="row">
+		  	<div class="col-lg-5 mb-4">
+			  <div class="list-group text-uppercase" id="list">
+  					<a href="#buildings" class="list-group-item">Buildings</a>
+  					<a href="#" class="list-group-item">home</a>
+  					<a href="#" class="list-group-item">Interiors</a>
+				  <a href="#" class="list-group-item">other product</a>
+</div>
+			  </div>
+			  <div class="col-lg-7 mt-3">
+			  	<div id="writing">
+				  	<h3 class="text-left text-uppercase" id="buildings">
+					Buildings
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+					</p>
+				  </div>
+				  <hr  style="height: 40px;">
+				  <div class="row">
+						<div class="col-md-6 ">
+						  <p class="progress-label text-uppercase pt-2">Green Materials</p>
+					  	 <div class="progress">
+					  <div class="progress-bar" data-progress="80" data-trigger="null" style="width: 80%;" >
+						  <span>
+							  <span class="counter" data-to="80" data-trigger="null">80 %</span>
+						  </span>
+							 </div>
+					  </div>
+					  </div><hr>
+					  <div class="col-md-6">
+						  <p class="progress-label text-uppercase pt-2">Homes</p>
+						  <div class="progress" style="height: 3px;">
+					  <div class="progress-bar" data-progress="60" data-trigger="null" style="width: 60%;">
+						  <span>
+							  <span class="counter" data-to="60" data-trigger="null">60 %</span>
+						  </span>
+						  </div>
+					  </div>
+					  
+					  </div><hr>
+					  
+					    <div class="col-md-6"> 
+							<p class="progress-label text-uppercase pt-2">Renovable</p>
+						  <div class="progress" style="height: 3px;">
+					  <div class="progress-bar" data-progress="50" data-trigger="null" style="width: 50%;">
+						  <span>
+							  <span class="counter" data-to="50" data-trigger="null">50 %</span>
+						  </span>
+						  </div>
+					  </div>
+					  
+					  </div><hr>
+					  
+					 
+					   <div class="col-md-6"> 
+						   <p class="progress-label text-uppercase pt-2">buildings</p>
+						  <div class="progress" style="height: 3px;">
+					  <div class="progress-bar" data-progress="70" data-trigger="null" style="width: 70%;">
+						  <span>
+							  <span class="counter" data-to="70" data-trigger="null">70 %</span>
+						  </span>
+						  </div>
+					  </div>
+					  
+					  </div> 
+					  
+			    </div>
+			  </div>
+		  </div>
+		  <hr>
+	    </div>
+	  </section>
+  <section style="background-color: rgb(246, 246, 246);">
+	  	<div class="container">
+		  	<hr>
+			<div class="row logo">
+			  <div class="col-lg-2  mx-auto">
+					<img alt="" src="images/homelab.png" class="img-fluid">
+				</div>
+			  <div class="col-lg-2  mx-auto">
+					<img alt="" src="images/brandlogo.png" class="img-fluid">
+				</div>
+			  <div class="col-lg-2  mx-auto">
+					<img alt="" src="images/NN.png" class="img-fluid">
+				</div>
+			  <div class="col-lg-2  mx-auto">
+					<img alt="" src="images/techbrand.png" class="img-fluid">
+				</div>
+			  <div class="col-lg-2 mx-auto">
+					<img alt="" src="images/coloniersis.png" class="img-fluid">
+				</div>
+			  <div class="col-lg-2 mx-auto ">
+					<img alt="" src="images/monograms.png" class="img-fluid">
+				</div>
+		  </div>
+<hr>
+    </div>
+	  </section>
+	  
+  <section class="ninth_sec">
+	  	<div class="container">
+			<hr>
+		  <div class="row">
+		    <div class="col-lg-6" style="margin-top: 130px;">
+				<div style="margin-left: 105px;">
+					<a class="btn btn-warning btn-lg" href="" style="font-weight: bold;"><span><i class="lni-bubble pr-2"></i></span>Get in touch now</a>
+					
+				</div>
+			  
+			  </div>
+		    <div class="col-lg-6">
+			  	<h3 class="text-warning">
+					LET'S DISCUSS WITH US
+				</h3><br>
+				<p class="text-light">
+					Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Arte utlabrure dolor iore et dolore muralla pertino caro aliqua.
+				</p>
+				<hr>
+				
+				<div class="row text-light">
+					<div class="col-md-6">
+						<p>Free quote</p>
+						<p>Lorem ipsum doler apmo</p>
+					</div>
+				
+				<div class="col-md-6">
+						<p>Easy payments</p>
+						<p>Money back ipsum apmo</p>
+					</div>
+				</div>
+			  </div>
+	      </div>
+			<hr>
+      </div>
+	  </section>
+	  
+	  <section style="background-color: rgb(246, 246, 246);">
+	  <div class="container">
+		  <hr>
+		  <div class="row">
+		  	<div class="col-lg-12 text-center">
+				<h3 class="text-uppercase">our creative team</h3><br>
+				<p>Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
+commodo consequat. Duis aute irure dolor in reprehenderi.</p>
+			  
+			  </div>
+	    </div><hr>
+	      <div class="row">
+		        <div class="col-lg-3">
+			      <div class="card text-center align-items-center"> <img class="img-fluid" width="150"  src="Home construction – Lightwire_files/team-1.jpg" alt="">
+			        <div class="card-body">
+			          <h5 class="card-title">Jack Christian</h5>
+			          <p class="card-text">Elevator</p>
+			           </div>
+		          </div>
+              </div>
+			   <div class="col-lg-3">
+			     <div class="card text-center align-items-center"> <img class="img-fluid" src="Home construction – Lightwire_files/team-2.jpg" alt="Card image cap" width="150">
+			       <div class="card-body">
+			         <h5 class="card-title">Alan Mentano</h5>
+			         <p class="card-text">Director</p>
+			          </div>
+		         </div>
+              </div>
+			   <div class="col-lg-3">
+			  	 <div class="card text-center align-items-center"> <img class="img-fluid" src="Home construction – Lightwire_files/team-3.jpg" alt="Card image cap" width="150">
+			       <div class="card-body">
+			         <h5 class="card-title">Martin Mercury</h5>
+			         <p class="card-text">Metal roofing</p>
+			         </div>
+		         </div>
+			  </div>
+			   <div class="col-lg-3">
+			  	 <div class="card text-center align-items-center"> <img class="img-fluid" src="Home construction – Lightwire_files/team-1.jpg" alt="Card image cap" width="150">
+			       <div class="card-body">
+			         <h5 class="card-title">Fred pisanu</h5>
+			         <p class="card-text">General worker</p>
+			         </div>
+		         </div>
+			  </div>
+        </div>
+		  <hr>
+      </div>
+	  </section>
+	  <div>
+	  <hr style="height: 200px;">
+	  </div>
+	  
+	  <section style="background-color: rgb(246, 246, 246);">
+	  	<div class="container">
+			<hr>
+		  	<div class="row">
+			  <div class="col-lg-3 mb-4">
+				<img src="Home construction – Lightwire_files/logo.png" class="img-fluid" alt="">
+					<hr>
+					<p>
+						We are the leaders in the construction and building industries. We are world wide. We never give up on the new challenges. Get in touch now!
+					</p>
+					
+					<div>
+					<ul id="list_labels" style="display: flex;">
+						<li class="pr-3"><i class="fa fa-facebook-official fa-2x"></i></li>
+						<li class="pr-3"><i class="fa fa-twitter fa-2x" ></i></li>
+						<li class="pr-3"><i class="fa fa-youtube fa-2x"></i></li>
+						<li class="pr-3"><i class="fa fa-linkedin fa-2x"></i></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-6">
+				  <form class="navbar-form search-input">
+					<div class="form-group footer-form">
+						  <input type="text" placeholder="search" class="form-control">
+						</div>
+					<a href=""><input class="btn-dark btn btn-sm text-center go_btn" value="GO"></a>
+				  </form>
+				  <hr style="height: 30px;">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footer-header">
+							  <h3 class="text-uppercase">useful resources</h3>
+							</div>
+							
+						  <div class="footer-menu">
+								
+						<ul class="text-uppercase">
+							<a href="#"><li>Home</li></a>
+							<a href="#"><li>About us</li></a>
+							<a href="#"><li>Subscribe now</li></a>
+							<a href=""><li>contact us</li></a>
+							<a href="#"><li>our partners</li></a>
+							<a href="#"><li>team and members</li></a>
+						
+						</ul>
+					</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="footer-header">
+							  <h3 class="text-uppercase">our company</h3>
+							</div>
+							
+						  <div class="footer-menu">
+						<ul class="text-uppercase">
+							<a href="#"><li>tech lab</li></a>
+							<a href="#"><li>company history</li></a>
+							<a href="#"><li>support area</li></a>
+							<a href="#"><li>shop</li></a>
+							<a href="#"><li>main projects</li></a>
+							<a href="#"><li>latest news</li></a>
+						
+						</ul>
+					</div>
+						</div>
+					
+					</div>
+					
+				
+				</div>
+				
+				<div class="col-lg-3">
+					
+				  <div class="card">
+					  <hr style="height: 10px;">
+				    <div class="card-body">
+				      <h3 class="card-title text-uppercase" style="font-weight: bold; font-size: 22px;">our promises to you</h3><br>
+				      <div class="card-text">
+						<ul id="list_labels" class="text-capitalize">
+							<li><i class="fa fa-info-circle" style="color:#f3b007;"></i>&nbsp;<label>free quote delivery</label></li>
+							<li><i class="fa fa-info-circle" style="color:#f3b007;"></i>&nbsp;<label>no hassle refund policy</label></li>
+							<li><i class="fa fa-info-circle" style="color:#f3b007;"></i>&nbsp;<label>considerate scheme</label></li>
+							<li><i class="fa fa-info-circle" style="color:#f3b007;"></i>&nbsp;<label>safe verified methods</label></li>
+						
+						</ul>
+								
+						
+						</div>
+						
+			      </div>
+                </div>
+					
+					<br>
+						
+						<div>
+							<img alt="" src="Home construction – Lightwire_files/payment.png" class="img-fluid">
+						</div>
+				       </div>
+			</div>
+			<hr>
+				  </div>
+	  </section>
+	  	<div class="sub-footer">
+			<hr style="border-top: 1px solid #9c9c9c; height:0;">
+		  <div class="container">
+				<br>
+			  <footer>
+		      	<nav class="navbar navbar-expand-lg nav_footer">
+				  <ul class="navbar-nav mr-auto">
+					<p class="nav-link">&copy;2019 Lightwire - Multipurpose & Modern Html Template Handmade by <a href="">saka</a></p>
+					</ul>
+					 <ul class="navbar-nav ml-auto" id="footer_links" style="display: flex;">
+						<p><a href="" >Terms of service</a></p>
+						 <p ><a href="" >Refund policy</a></p>
+						 <p ><a href="" >Contact us</a></p>
+					</ul>
+				  </nav>
+                </footer>
+			</div>
+			
+			</div>
+	  
+  	<!-- body code goes here -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>	
+	 
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
